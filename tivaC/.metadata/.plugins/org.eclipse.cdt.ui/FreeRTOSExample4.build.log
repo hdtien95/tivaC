@@ -1,0 +1,576 @@
+
+**** Build of configuration Debug for project FreeRTOSExample4 ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv4 --code_state=32 --include_path="D:/tivaC/FreeRTOSExample4" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample4/Application" --include_path="D:/tivaC/FreeRTOSExample4/driver" --include_path="D:/tivaC/FreeRTOSExample4/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM --define=ccs="ccs" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+3 Assembly Errors, No Assembly Warnings
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'tm4c123gh6pm_startup_ccs.obj' failed
+"C:\Users\hdtie\AppData\Local\Temp\{BC3C996E-2438-4546-8C16-A9F1B58CEDCC}", ERROR!   at line 275: [E0001] Undefined symbol
+	    b.w     _c_int00
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{BC3C996E-2438-4546-8C16-A9F1B58CEDCC}", ERROR!   at line 275: [E0003] Unexpected trailing operand(s)
+	    b.w     _c_int00
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{BC3C996E-2438-4546-8C16-A9F1B58CEDCC}", ERROR!   at EOF: [E0300] The following symbols are undefined:
+  .w
+ 
+Errors in Source - Assembler Aborted
+gmake: *** [tm4c123gh6pm_startup_ccs.obj] Error 1
+Building file: "../Application/freertos_demo.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv4 --code_state=32 --include_path="D:/tivaC/FreeRTOSExample4" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample4/Application" --include_path="D:/tivaC/FreeRTOSExample4/driver" --include_path="D:/tivaC/FreeRTOSExample4/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM --define=ccs="ccs" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Application/freertos_demo.d_raw" --obj_directory="Application"  "../Application/freertos_demo.c"
+2 Assembly Errors, No Assembly Warnings
+ 
+>> Compilation failure
+Application/subdir_rules.mk:9: recipe for target 'Application/freertos_demo.obj' failed
+"../Application/freertos_demo.c", line 41: warning #48-D: incompatible redefinition of macro "TARGET_IS_BLIZZARD_RB1"
+"C:\Users\hdtie\AppData\Local\Temp\{A445B840-D40C-4597-B763-A2A3C9E3593E}", ERROR!   at line 847: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{A445B840-D40C-4597-B763-A2A3C9E3593E}", ERROR!   at line 848: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+ 
+Errors in Source - Assembler Aborted
+gmake: *** [Application/freertos_demo.obj] Error 1
+Building file: "../interrupt.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv4 --code_state=32 --include_path="D:/tivaC/FreeRTOSExample4" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample4/Application" --include_path="D:/tivaC/FreeRTOSExample4/driver" --include_path="D:/tivaC/FreeRTOSExample4/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM --define=ccs="ccs" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="interrupt.d_raw"  "../interrupt.c"
+Finished building: "../interrupt.c"
+ 
+Building file: "../Application/ledGreenStateMachine.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv4 --code_state=32 --include_path="D:/tivaC/FreeRTOSExample4" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample4/Application" --include_path="D:/tivaC/FreeRTOSExample4/driver" --include_path="D:/tivaC/FreeRTOSExample4/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM --define=ccs="ccs" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Application/ledGreenStateMachine.d_raw" --obj_directory="Application"  "../Application/ledGreenStateMachine.c"
+"D:/tivaC/FreeRTOSExample4/driver/switches.h", line 17: warning #48-D: incompatible redefinition of macro "TARGET_IS_BLIZZARD_RB1"
+"D:/tivaC/FreeRTOSExample4/debug.h", line 12: warning #1-D: last line of file ends without a newline
+Finished building: "../Application/ledGreenStateMachine.c"
+ 
+Building file: "../Application/led_task.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv4 --code_state=32 --include_path="D:/tivaC/FreeRTOSExample4" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample4/Application" --include_path="D:/tivaC/FreeRTOSExample4/driver" --include_path="D:/tivaC/FreeRTOSExample4/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM --define=ccs="ccs" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Application/led_task.d_raw" --obj_directory="Application"  "../Application/led_task.c"
+ 
+>> Compilation failure
+Application/subdir_rules.mk:9: recipe for target 'Application/led_task.obj' failed
+"../Application/led_task.c", line 31: fatal error #1965: cannot open source file "drivers/rgb.h"
+1 catastrophic error detected in the compilation of "../Application/led_task.c".
+Compilation terminated.
+gmake: *** [Application/led_task.obj] Error 1
+Building file: "../Application/switch_task.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv4 --code_state=32 --include_path="D:/tivaC/FreeRTOSExample4" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample4/Application" --include_path="D:/tivaC/FreeRTOSExample4/driver" --include_path="D:/tivaC/FreeRTOSExample4/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM --define=ccs="ccs" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Application/switch_task.d_raw" --obj_directory="Application"  "../Application/switch_task.c"
+ 
+>> Compilation failure
+Application/subdir_rules.mk:9: recipe for target 'Application/switch_task.obj' failed
+"../Application/switch_task.c", line 33: fatal error #1965: cannot open source file "drivers/buttons.h"
+1 catastrophic error detected in the compilation of "../Application/switch_task.c".
+Compilation terminated.
+gmake: *** [Application/switch_task.obj] Error 1
+Building file: "../Application/ledRedStateMachine.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv4 --code_state=32 --include_path="D:/tivaC/FreeRTOSExample4" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample4/Application" --include_path="D:/tivaC/FreeRTOSExample4/driver" --include_path="D:/tivaC/FreeRTOSExample4/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM --define=ccs="ccs" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Application/ledRedStateMachine.d_raw" --obj_directory="Application"  "../Application/ledRedStateMachine.c"
+"D:/tivaC/FreeRTOSExample4/driver/switches.h", line 17: warning #48-D: incompatible redefinition of macro "TARGET_IS_BLIZZARD_RB1"
+"D:/tivaC/FreeRTOSExample4/debug.h", line 12: warning #1-D: last line of file ends without a newline
+Finished building: "../Application/ledRedStateMachine.c"
+ 
+Building file: "../FreeRTOSSource/croutine.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv4 --code_state=32 --include_path="D:/tivaC/FreeRTOSExample4" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample4/Application" --include_path="D:/tivaC/FreeRTOSExample4/driver" --include_path="D:/tivaC/FreeRTOSExample4/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM --define=ccs="ccs" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="FreeRTOSSource/croutine.d_raw" --obj_directory="FreeRTOSSource"  "../FreeRTOSSource/croutine.c"
+Finished building: "../FreeRTOSSource/croutine.c"
+ 
+Building file: "../FreeRTOSSource/event_groups.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv4 --code_state=32 --include_path="D:/tivaC/FreeRTOSExample4" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample4/Application" --include_path="D:/tivaC/FreeRTOSExample4/driver" --include_path="D:/tivaC/FreeRTOSExample4/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM --define=ccs="ccs" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="FreeRTOSSource/event_groups.d_raw" --obj_directory="FreeRTOSSource"  "../FreeRTOSSource/event_groups.c"
+6 Assembly Errors, No Assembly Warnings
+ 
+>> Compilation failure
+FreeRTOSSource/subdir_rules.mk:9: recipe for target 'FreeRTOSSource/event_groups.obj' failed
+"../FreeRTOSSource/event_groups.c", line 494: warning #225-D: function "_set_interrupt_priority" declared implicitly
+"C:\Users\hdtie\AppData\Local\Temp\{3E2AC8E9-A10C-41A2-A4AE-925483E40F9F}", ERROR!   at line 501: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{3E2AC8E9-A10C-41A2-A4AE-925483E40F9F}", ERROR!   at line 502: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{3E2AC8E9-A10C-41A2-A4AE-925483E40F9F}", ERROR!   at line 889: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{3E2AC8E9-A10C-41A2-A4AE-925483E40F9F}", ERROR!   at line 890: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{3E2AC8E9-A10C-41A2-A4AE-925483E40F9F}", ERROR!   at line 1208: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{3E2AC8E9-A10C-41A2-A4AE-925483E40F9F}", ERROR!   at line 1209: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+ 
+Errors in Source - Assembler Aborted
+gmake: *** [FreeRTOSSource/event_groups.obj] Error 1
+Building file: "../FreeRTOSSource/port.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv4 --code_state=32 --include_path="D:/tivaC/FreeRTOSExample4" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample4/Application" --include_path="D:/tivaC/FreeRTOSExample4/driver" --include_path="D:/tivaC/FreeRTOSExample4/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM --define=ccs="ccs" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="FreeRTOSSource/port.d_raw" --obj_directory="FreeRTOSSource"  "../FreeRTOSSource/port.c"
+ 
+>> Compilation failure
+FreeRTOSSource/subdir_rules.mk:9: recipe for target 'FreeRTOSSource/port.obj' failed
+"../FreeRTOSSource/port.c", line 37: fatal error #35: #error directive: This port can only be used when the project options are configured to enable hardware floating point support.
+1 catastrophic error detected in the compilation of "../FreeRTOSSource/port.c".
+Compilation terminated.
+gmake: *** [FreeRTOSSource/port.obj] Error 1
+Building file: "../FreeRTOSSource/heap_2.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv4 --code_state=32 --include_path="D:/tivaC/FreeRTOSExample4" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample4/Application" --include_path="D:/tivaC/FreeRTOSExample4/driver" --include_path="D:/tivaC/FreeRTOSExample4/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM --define=ccs="ccs" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="FreeRTOSSource/heap_2.d_raw" --obj_directory="FreeRTOSSource"  "../FreeRTOSSource/heap_2.c"
+Finished building: "../FreeRTOSSource/heap_2.c"
+ 
+Building file: "../FreeRTOSSource/list.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv4 --code_state=32 --include_path="D:/tivaC/FreeRTOSExample4" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample4/Application" --include_path="D:/tivaC/FreeRTOSExample4/driver" --include_path="D:/tivaC/FreeRTOSExample4/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM --define=ccs="ccs" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="FreeRTOSSource/list.d_raw" --obj_directory="FreeRTOSSource"  "../FreeRTOSSource/list.c"
+Finished building: "../FreeRTOSSource/list.c"
+ 
+Building file: "../FreeRTOSSource/portasm.asm"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv4 --code_state=32 --include_path="D:/tivaC/FreeRTOSExample4" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample4/Application" --include_path="D:/tivaC/FreeRTOSExample4/driver" --include_path="D:/tivaC/FreeRTOSExample4/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM --define=ccs="ccs" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="FreeRTOSSource/portasm.d_raw" --obj_directory="FreeRTOSSource"  "../FreeRTOSSource/portasm.asm"
+44 Assembly Errors, 2 Assembly Warnings
+ 
+>> Compilation failure
+FreeRTOSSource/subdir_rules.mk:16: recipe for target 'FreeRTOSSource/portasm.obj' failed
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 49: [E0002] Illegal mnemonic specified
+	 	mrs r0, ipsr
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 57: [E0200] Offset out of range, must be [0,1023]
+		ldr r0, ulMaxSyscallInterruptPriorityConst
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 58: [E0002] Illegal mnemonic specified
+		msr basepri, r0
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 66: [E0002] Illegal mnemonic specified
+		mrs r0, psp
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 67: [E0002] Illegal mnemonic specified
+		isb
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 70: [E0200] Offset out of range, must be [0,1023]
+		ldr	r3, pxCurrentTCBConst
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 74: [E0004] Destination register Rd must be a lo register
+		tst r14, #0x10
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 74: [E0004] Operand Rs must be a register
+		tst r14, #0x10
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 75: [E0002] Illegal mnemonic specified
+		it eq
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 76: [E0002] Illegal mnemonic specified
+		vstmdbeq r0!, {s16-s31}
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 79: [E0004] Register list must only contain lo registers
+		stmdb r0!, {r4-r11, r14}
+ 
+"../FreeRTOSSource/portasm.asm", WARNING! at line 79: [W0004] Invalid instruction modifier(s) ignored
+		stmdb r0!, {r4-r11, r14}
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 84: [E0004] Base register Rb cannot be a hi register
+		stmdb sp!, {r0, r3}
+ 
+"../FreeRTOSSource/portasm.asm", WARNING! at line 84: [W0004] Invalid instruction modifier(s) ignored
+		stmdb sp!, {r0, r3}
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 85: [E0200] Offset out of range, must be [0,1023]
+		ldr r0, ulMaxSyscallInterruptPriorityConst
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 87: [E0002] Illegal mnemonic specified
+		msr basepri, r1
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 88: [E0002] Illegal mnemonic specified
+		dsb
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 89: [E0002] Illegal mnemonic specified
+		isb
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 91: [E0002] Instruction must set status
+		mov r0, #0
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 92: [E0002] Illegal mnemonic specified
+		msr basepri, r0
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 93: [E0004] Base register Rb cannot be a hi register
+		ldmia sp!, {r0, r3}
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 100: [E0004] Register list must only contain lo registers
+		ldmia r0!, {r4-r11, r14}
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 104: [E0004] Destination register Rd must be a lo register
+		tst r14, #0x10
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 104: [E0004] Operand Rs must be a register
+		tst r14, #0x10
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 105: [E0002] Illegal mnemonic specified
+		it eq
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 106: [E0002] Illegal mnemonic specified
+		vldmiaeq r0!, {s16-s31}
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 108: [E0002] Illegal mnemonic specified
+		msr psp, r0
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 109: [E0002] Illegal mnemonic specified
+		isb
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 118: [E0200] Offset out of range, must be [0,1023]
+		ldr	r3, pxCurrentTCBConst
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 122: [E0004] Register list must only contain lo registers
+		ldmia r0!, {r4-r11, r14}
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 123: [E0002] Illegal mnemonic specified
+		msr psp, r0
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 124: [E0002] Illegal mnemonic specified
+		isb
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 125: [E0002] Instruction must set status
+		mov r0, #0
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 126: [E0002] Illegal mnemonic specified
+		msr	basepri, r0
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 135: [E0200] Offset out of range, must be [0,1023]
+		ldr r0, NVICOffsetConst
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 139: [E0002] Illegal mnemonic specified
+		msr msp, r0
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 144: [E0002] Instruction must set status
+		mov r0, #0
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 145: [E0002] Illegal mnemonic specified
+		msr control, r0
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 149: [E0002] Illegal mnemonic specified
+		dsb
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 150: [E0002] Illegal mnemonic specified
+		isb
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 159: [E0001] Undefined symbol
+		ldr.w r0, CPACRConst
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 159: [E0003] Unexpected trailing operand(s)
+		ldr.w r0, CPACRConst
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 163: [E0002] Instruction must set status
+		orr	r1, r1, #( 0xf << 20 )
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 163: [E0200] Offset out of range, must be 5 bit immediate
+		orr	r1, r1, #( 0xf << 20 )
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at line 163: [E0003] Unexpected trailing operand(s)
+		orr	r1, r1, #( 0xf << 20 )
+ 
+"../FreeRTOSSource/portasm.asm", ERROR!   at EOF: [E0300] The following symbols are undefined:
+  .w
+ 
+Errors in Source - Assembler Aborted
+gmake: *** [FreeRTOSSource/portasm.obj] Error 1
+Building file: "../FreeRTOSSource/queue.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv4 --code_state=32 --include_path="D:/tivaC/FreeRTOSExample4" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample4/Application" --include_path="D:/tivaC/FreeRTOSExample4/driver" --include_path="D:/tivaC/FreeRTOSExample4/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM --define=ccs="ccs" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="FreeRTOSSource/queue.d_raw" --obj_directory="FreeRTOSSource"  "../FreeRTOSSource/queue.c"
+28 Assembly Errors, No Assembly Warnings
+ 
+>> Compilation failure
+FreeRTOSSource/subdir_rules.mk:9: recipe for target 'FreeRTOSSource/queue.obj' failed
+"../FreeRTOSSource/queue.c", line 954: warning #225-D: function "_set_interrupt_priority" declared implicitly
+"../FreeRTOSSource/queue.c", line 1113: warning #225-D: function "_set_interrupt_priority" declared implicitly
+"../FreeRTOSSource/queue.c", line 1775: warning #225-D: function "_set_interrupt_priority" declared implicitly
+"../FreeRTOSSource/queue.c", line 1868: warning #225-D: function "_set_interrupt_priority" declared implicitly
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 433: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 434: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 1541: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 1542: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 1559: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 1560: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 1737: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 1738: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 1932: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 1933: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 2180: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 2181: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 2520: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 2521: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 2703: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 2704: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 2989: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 2990: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 3209: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 3210: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 3579: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 3580: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 3762: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 3763: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 3960: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 3961: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 4219: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{4D7AAFDE-BB21-4F44-8942-DFB0942DC71E}", ERROR!   at line 4220: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+ 
+Errors in Source - Assembler Aborted
+gmake: *** [FreeRTOSSource/queue.obj] Error 1
+Building file: "../FreeRTOSSource/stream_buffer.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv4 --code_state=32 --include_path="D:/tivaC/FreeRTOSExample4" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample4/Application" --include_path="D:/tivaC/FreeRTOSExample4/driver" --include_path="D:/tivaC/FreeRTOSExample4/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM --define=ccs="ccs" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="FreeRTOSSource/stream_buffer.d_raw" --obj_directory="FreeRTOSSource"  "../FreeRTOSSource/stream_buffer.c"
+8 Assembly Errors, No Assembly Warnings
+ 
+>> Compilation failure
+FreeRTOSSource/subdir_rules.mk:9: recipe for target 'FreeRTOSSource/stream_buffer.obj' failed
+"../FreeRTOSSource/stream_buffer.c", line 621: warning #225-D: function "_set_interrupt_priority" declared implicitly
+"../FreeRTOSSource/stream_buffer.c", line 834: warning #225-D: function "_set_interrupt_priority" declared implicitly
+"../FreeRTOSSource/stream_buffer.c", line 968: warning #225-D: function "_set_interrupt_priority" declared implicitly
+"../FreeRTOSSource/stream_buffer.c", line 998: warning #225-D: function "_set_interrupt_priority" declared implicitly
+"C:\Users\hdtie\AppData\Local\Temp\{F178602C-568B-4A40-AC81-2C8D8B9FFABD}", ERROR!   at line 1641: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{F178602C-568B-4A40-AC81-2C8D8B9FFABD}", ERROR!   at line 1642: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{F178602C-568B-4A40-AC81-2C8D8B9FFABD}", ERROR!   at line 2494: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{F178602C-568B-4A40-AC81-2C8D8B9FFABD}", ERROR!   at line 2495: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{F178602C-568B-4A40-AC81-2C8D8B9FFABD}", ERROR!   at line 3112: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{F178602C-568B-4A40-AC81-2C8D8B9FFABD}", ERROR!   at line 3113: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{F178602C-568B-4A40-AC81-2C8D8B9FFABD}", ERROR!   at line 3280: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{F178602C-568B-4A40-AC81-2C8D8B9FFABD}", ERROR!   at line 3281: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+ 
+Errors in Source - Assembler Aborted
+gmake: *** [FreeRTOSSource/stream_buffer.obj] Error 1
+Building file: "../FreeRTOSSource/timers.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv4 --code_state=32 --include_path="D:/tivaC/FreeRTOSExample4" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample4/Application" --include_path="D:/tivaC/FreeRTOSExample4/driver" --include_path="D:/tivaC/FreeRTOSExample4/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM --define=ccs="ccs" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="FreeRTOSSource/timers.d_raw" --obj_directory="FreeRTOSSource"  "../FreeRTOSSource/timers.c"
+Finished building: "../FreeRTOSSource/timers.c"
+ 
+Building file: "../driver/buttons.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv4 --code_state=32 --include_path="D:/tivaC/FreeRTOSExample4" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample4/Application" --include_path="D:/tivaC/FreeRTOSExample4/driver" --include_path="D:/tivaC/FreeRTOSExample4/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM --define=ccs="ccs" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="driver/buttons.d_raw" --obj_directory="driver"  "../driver/buttons.c"
+ 
+>> Compilation failure
+driver/subdir_rules.mk:9: recipe for target 'driver/buttons.obj' failed
+"../driver/buttons.c", line 35: fatal error #1965: cannot open source file "drivers/buttons.h"
+1 catastrophic error detected in the compilation of "../driver/buttons.c".
+Compilation terminated.
+gmake: *** [driver/buttons.obj] Error 1
+Building file: "../driver/led.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv4 --code_state=32 --include_path="D:/tivaC/FreeRTOSExample4" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample4/Application" --include_path="D:/tivaC/FreeRTOSExample4/driver" --include_path="D:/tivaC/FreeRTOSExample4/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM --define=ccs="ccs" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="driver/led.d_raw" --obj_directory="driver"  "../driver/led.c"
+"..\driver\led.h", line 16: warning #48-D: incompatible redefinition of macro "TARGET_IS_BLIZZARD_RB1"
+Finished building: "../driver/led.c"
+ 
+Building file: "../FreeRTOSSource/tasks.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv4 --code_state=32 --include_path="D:/tivaC/FreeRTOSExample4" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample4/Application" --include_path="D:/tivaC/FreeRTOSExample4/driver" --include_path="D:/tivaC/FreeRTOSExample4/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM --define=ccs="ccs" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="FreeRTOSSource/tasks.d_raw" --obj_directory="FreeRTOSSource"  "../FreeRTOSSource/tasks.c"
+34 Assembly Errors, No Assembly Warnings
+ 
+>> Compilation failure
+FreeRTOSSource/subdir_rules.mk:9: recipe for target 'FreeRTOSSource/tasks.obj' failed
+"../FreeRTOSSource/tasks.c", line 1449: warning #225-D: function "_set_interrupt_priority" declared implicitly
+"../FreeRTOSSource/tasks.c", line 1857: warning #225-D: function "_set_interrupt_priority" declared implicitly
+"../FreeRTOSSource/tasks.c", line 1973: warning #225-D: function "_set_interrupt_priority" declared implicitly
+"../FreeRTOSSource/tasks.c", line 2026: warning #225-D: function "_set_interrupt_priority" declared implicitly
+"../FreeRTOSSource/tasks.c", line 2896: warning #225-D: function "__clz" declared implicitly
+"../FreeRTOSSource/tasks.c", line 4698: warning #225-D: function "_set_interrupt_priority" declared implicitly
+"../FreeRTOSSource/tasks.c", line 4821: warning #225-D: function "_set_interrupt_priority" declared implicitly
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 1282: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 1283: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 1529: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 1530: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 1767: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 1768: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 1900: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 1901: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 2341: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 2342: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 2697: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 2698: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 2954: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 2955: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 3293: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 3294: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 3421: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 3422: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 3618: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 3619: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 3716: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 3717: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 4081: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 4082: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 8861: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 8862: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 9108: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 9109: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 9488: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 9489: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 9663: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 9664: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 9998: [E0002] Instruction only available in V7 and V6M0
+		dsb
+ 
+"C:\Users\hdtie\AppData\Local\Temp\{78BEEB78-C1D3-468C-8DDD-980BD78CCF6C}", ERROR!   at line 9999: [E0002] Instruction only available in V7 and V6M0
+		isb
+ 
+ 
+Errors in Source - Assembler Aborted
+gmake: *** [FreeRTOSSource/tasks.obj] Error 1
+Building file: "../driver/rgb.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv4 --code_state=32 --include_path="D:/tivaC/FreeRTOSExample4" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample4/Application" --include_path="D:/tivaC/FreeRTOSExample4/driver" --include_path="D:/tivaC/FreeRTOSExample4/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM --define=ccs="ccs" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="driver/rgb.d_raw" --obj_directory="driver"  "../driver/rgb.c"
+Finished building: "../driver/rgb.c"
+ 
+Building file: "../driver/switches.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv4 --code_state=32 --include_path="D:/tivaC/FreeRTOSExample4" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample4/Application" --include_path="D:/tivaC/FreeRTOSExample4/driver" --include_path="D:/tivaC/FreeRTOSExample4/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM --define=ccs="ccs" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="driver/switches.d_raw" --obj_directory="driver"  "../driver/switches.c"
+"..\driver\switches.h", line 17: warning #48-D: incompatible redefinition of macro "TARGET_IS_BLIZZARD_RB1"
+"../driver/switches.c", line 44: warning #994-D: missing return statement at end of non-void function "switchState"
+Finished building: "../driver/switches.c"
+ 
+Building file: "../driver/uartstdio.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv4 --code_state=32 --include_path="D:/tivaC/FreeRTOSExample4" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample4/Application" --include_path="D:/tivaC/FreeRTOSExample4/driver" --include_path="D:/tivaC/FreeRTOSExample4/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM --define=ccs="ccs" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="driver/uartstdio.d_raw" --obj_directory="driver"  "../driver/uartstdio.c"
+Finished building: "../driver/uartstdio.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

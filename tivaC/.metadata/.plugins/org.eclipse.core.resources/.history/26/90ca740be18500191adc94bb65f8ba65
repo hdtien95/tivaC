@@ -1,0 +1,20 @@
+/*
+ * doorStateMachineUpdate.c
+ *
+ *  Created on: Jun 3, 2019
+ *      Author: hdtie
+ */
+
+#include "doorStateMachineUpdate.h"
+
+
+typedef enum {S_CLOSE=0, S_OPEN, S_WAIT} doorState_t;
+static doorState_t     doorState=S_CLOSE;
+
+void doorStateMachineUpdate(void)
+{
+    switch(doorState=S_CLOSE)
+
+}
+
+

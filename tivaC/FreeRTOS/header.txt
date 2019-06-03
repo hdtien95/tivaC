@@ -1,0 +1,16 @@
+TIVAWARE_INSTALL
+
+C:\ti\TivaWare_C_Series-2.1.4.178
+
+TARGET_IS_BLIZZARD_RB1
+
+D:\tivaC\FreeRTOS\FreeRTOSSource\include
+
+D:\tivaC\FreeRTOS\FreeRTOS_example1\Application
+
+D:\tivaC\FreeRTOS\FreeRTOS_example1\driver
+
+D:\tivaC\FreeRTOS\FreeRTOS_example1\FreeRTOSSource
+
+
+D:\tivaC\FreeRTOSExample3\

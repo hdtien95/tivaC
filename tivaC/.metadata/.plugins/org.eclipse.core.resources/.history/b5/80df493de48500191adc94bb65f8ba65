@@ -1,0 +1,17 @@
+/*
+ * doorStateMachineUpdate.h
+ *
+ *  Created on: Jun 3, 2019
+ *      Author: hdtie
+ */
+
+#ifndef DOORSTATEMACHINEUPDATE_H_
+#define DOORSTATEMACHINEUPDATE_H_
+
+extern uint32_t motionTimerCount;
+extern uint32_t mnt;
+void motionStateMachineUpdate(void);
+
+
+
+#endif /* DOORSTATEMACHINEUPDATE_H_ */

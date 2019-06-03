@@ -1,0 +1,18 @@
+/*
+ * ledStateMachineUpdate.c
+ *
+ *  Created on: Jun 3, 2019
+ *      Author: hdtie
+ */
+
+
+
+#include "ledStateMachineUpdate.h"
+
+
+typedef enum {S_CLOSE=0, S_OPEN, S_OPEN_WAIT} doorState_t;
+static doorState_t     doorState=S_CLOSE;
+uint32_t doorTimerCount = 0;
+
+void doorStateMachineUpdate(void)
+{

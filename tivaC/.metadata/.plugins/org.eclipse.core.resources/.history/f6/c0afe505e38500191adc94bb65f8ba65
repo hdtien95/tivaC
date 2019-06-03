@@ -1,0 +1,23 @@
+/*
+ * ledStateMachineUpdate.c
+ *
+ *  Created on: Jun 3, 2019
+ *      Author: hdtie
+ */
+
+
+
+#include "ledStateMachineUpdate.h"
+
+
+typedef enum {S_LEDOFF=0, S_LEDON} ledState_t;
+static ledState_t     ledState=S_LEDOFF;
+uint32_t ledTimerCount = 0;
+
+void ledStateMachineUpdate(void)
+{
+    switch (ledState)
+    {
+        case S_LEDOFF:
+    }
+}

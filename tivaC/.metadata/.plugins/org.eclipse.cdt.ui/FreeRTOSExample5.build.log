@@ -1,0 +1,38 @@
+
+**** Build of configuration Debug for project FreeRTOSExample5 ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../Application/freertos_demo.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/tivaC/FreeRTOSExample5" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/tivaC/FreeRTOSExample5/Application" --include_path="D:/tivaC/FreeRTOS/FreeRTOSSource/include" --include_path="D:/tivaC/FreeRTOSExample5/driver" --include_path="D:/tivaC/FreeRTOSExample5/FreeRTOSSource" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=ccs="ccs" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Application/freertos_demo.d_raw" --obj_directory="Application"  "../Application/freertos_demo.c"
+"../Application/freertos_demo.c", line 41: warning #48-D: incompatible redefinition of macro "TARGET_IS_BLIZZARD_RB1"
+"../Application/freertos_demo.c", line 210: warning #112-D: statement is unreachable
+"../Application/freertos_demo.c", line 152: warning #179-D: function "LEDGreenTask" was declared but never referenced
+Finished building: "../Application/freertos_demo.c"
+ 
+Building target: "FreeRTOSExample5.out"
+Invoking: ARM Linker
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_BLIZZARD_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"FreeRTOSExample5.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/lib" -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FreeRTOSExample5_linkInfo.xml" --rom_model -o "FreeRTOSExample5.out" "./interrupt.obj" "./tm4c123gh6pm_startup_ccs.obj" "./Application/freertos_demo.obj" "./Application/ledGreenStateMachine.obj" "./Application/ledRedStateMachine.obj" "./Application/led_task.obj" "./Application/switch_task.obj" "./FreeRTOSSource/croutine.obj" "./FreeRTOSSource/event_groups.obj" "./FreeRTOSSource/heap_2.obj" "./FreeRTOSSource/list.obj" "./FreeRTOSSource/port.obj" "./FreeRTOSSource/portasm.obj" "./FreeRTOSSource/queue.obj" "./FreeRTOSSource/stream_buffer.obj" "./FreeRTOSSource/tasks.obj" "./FreeRTOSSource/timers.obj" "./driver/buttons.obj" "./driver/led.obj" "./driver/rgb.obj" "./driver/switches.obj" "./driver/uartstdio.obj" "C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/rvmdk/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+warning #16036-D: file "C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/rvmdk/driverlib.lib<cpu.o>" contains ARM EABI section attributes which are not supported.  According to ARM document IHI 0045D, these attributes are deprecated and optional.  Compatibility checking will not be performed for this file; the user should verify compatibility.
+warning #16036-D: file "C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/rvmdk/driverlib.lib<sysctl.o>" contains ARM EABI section attributes which are not supported.  According to ARM document IHI 0045D, these attributes are deprecated and optional.  Compatibility checking will not be performed for this file; the user should verify compatibility.
+warning #10247-D: creating output section ".emb_text" without a SECTIONS specification
+warning #10247-D: creating output section "i.GPIODirModeSet" without a SECTIONS specification
+warning #10247-D: creating output section "i.GPIOIntClear" without a SECTIONS specification
+warning #10247-D: creating output section "i.GPIOIntEnable" without a SECTIONS specification
+warning #10247-D: creating output section "i.GPIOIntTypeSet" without a SECTIONS specification
+warning #10247-D: creating output section "i.GPIOPadConfigSet" without a SECTIONS specification
+warning #10247-D: creating output section "i.GPIOPinConfigure" without a SECTIONS specification
+warning #10247-D: creating output section "i.GPIOPinRead" without a SECTIONS specification
+warning #10247-D: creating output section "i.GPIOPinTypeGPIOOutput" without a SECTIONS specification
+warning #10247-D: creating output section "i.GPIOPinTypeUART" without a SECTIONS specification
+warning #10247-D: creating output section "i.GPIOPinWrite" without a SECTIONS specification
+warning #10247-D: creating output section ".constdata" without a SECTIONS specification
+warning #10247-D: creating output section "i.SysCtlClockSet" without a SECTIONS specification
+warning #10247-D: creating output section "i.SysCtlPeripheralEnable" without a SECTIONS specification
+warning #10247-D: creating output section "i.UARTClockSourceSet" without a SECTIONS specification
+Finished building target: "FreeRTOSExample5.out"
+ 
+
+**** Build Finished ****

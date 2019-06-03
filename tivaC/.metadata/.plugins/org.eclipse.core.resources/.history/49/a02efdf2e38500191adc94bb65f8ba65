@@ -1,0 +1,16 @@
+/*
+ * motionStateMachineUpdate.h
+ *
+ *  Created on: Jun 3, 2019
+ *      Author: hdtie
+ */
+
+#ifndef MOTIONSTATEMACHINEUPDATE_H_
+#define MOTIONSTATEMACHINEUPDATE_H_
+
+extern uint32_t motionTimerCount;
+
+void motionStateMachineUpdate(void);
+
+
+#endif /* MOTIONSTATEMACHINEUPDATE_H_ */

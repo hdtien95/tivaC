@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\tivaC\LEDRedMultiTaskExample"/>
+		<item value="D:\tivaC\LEDRedBlueGreenMultiTaskExample"/>
+		<item value="D:\tivaC\FreeRTOS_ThayBao\TVALab_freertos\FreeRTOSExample9_12"/>
+		<item value="D:\tivaC\FreeRTOS\FreeRTOS_example9"/>
+		<item value="D:\tivaC\FreeRTOSExample2"/>
+		<item value="D:\tivaC\FreeRTOSExample3"/>
+	</list>
+	<section name="NewWizardAction">
+	</section>
+</section>

@@ -1,0 +1,57 @@
+
+**** Build of configuration Debug for project hierachyStateMachine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../motionStateMachineUpdate.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/tivaC/hierachyStateMachine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="motionStateMachineUpdate.d_raw"  "../motionStateMachineUpdate.c"
+Finished building: "../motionStateMachineUpdate.c"
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/tivaC/hierachyStateMachine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"..\debug.h", line 12: warning #1-D: last line of file ends without a newline
+"../main.c", line 129: warning #179-D: variable "ui32PrevCount" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "hierachyStateMachine.out"
+Invoking: ARM Linker
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"hierachyStateMachine.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/lib" -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="hierachyStateMachine_linkInfo.xml" --rom_model -o "hierachyStateMachine.out" "./doorStateMachineUpdate.obj" "./led.obj" "./ledStateMachineUpdate.obj" "./main.obj" "./motionStateMachineUpdate.obj" "./switches.obj" "./tm4c123gh6pm_startup_ccs.obj" "C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/rvmdk/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+warning #16036-D: file "C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/rvmdk/driverlib.lib<sysctl.o>" contains ARM EABI section attributes which are not supported.  According to ARM document IHI 0045D, these attributes are deprecated and optional.  Compatibility checking will not be performed for this file; the user should verify compatibility.
+warning #16036-D: file "C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/rvmdk/driverlib.lib<cpu.o>" contains ARM EABI section attributes which are not supported.  According to ARM document IHI 0045D, these attributes are deprecated and optional.  Compatibility checking will not be performed for this file; the user should verify compatibility.
+warning #10247-D: creating output section "i.GPIODirModeSet" without a SECTIONS specification
+warning #10247-D: creating output section "i.GPIOPadConfigSet" without a SECTIONS specification
+warning #10247-D: creating output section "i.GPIOPinConfigure" without a SECTIONS specification
+warning #10247-D: creating output section "i.GPIOPinRead" without a SECTIONS specification
+warning #10247-D: creating output section "i.GPIOPinTypeGPIOOutput" without a SECTIONS specification
+warning #10247-D: creating output section "i.GPIOPinTypeUART" without a SECTIONS specification
+warning #10247-D: creating output section "i.GPIOPinWrite" without a SECTIONS specification
+warning #10247-D: creating output section ".constdata" without a SECTIONS specification
+warning #10247-D: creating output section "i.IntMasterEnable" without a SECTIONS specification
+warning #10247-D: creating output section ".emb_text" without a SECTIONS specification
+warning #10247-D: creating output section "i.SysCtlClockGet" without a SECTIONS specification
+warning #10247-D: creating output section "i.SysCtlClockSet" without a SECTIONS specification
+warning #10247-D: creating output section "i.SysCtlPeripheralEnable" without a SECTIONS specification
+warning #10247-D: creating output section "i.SysTickEnable" without a SECTIONS specification
+warning #10247-D: creating output section "i.SysTickIntEnable" without a SECTIONS specification
+warning #10247-D: creating output section "i.SysTickPeriodSet" without a SECTIONS specification
+warning #10247-D: creating output section "i.UARTClockSourceSet" without a SECTIONS specification
+ 
+ undefined       first referenced
+  symbol             in file     
+ ---------       ----------------
+ UARTStdioConfig ./main.obj      
+ UARTprintf      ./main.obj      
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "hierachyStateMachine.out" not built
+ 
+>> Compilation failure
+makefile:148: recipe for target 'hierachyStateMachine.out' failed
+gmake[1]: *** [hierachyStateMachine.out] Error 1
+makefile:144: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****

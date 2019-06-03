@@ -1,0 +1,24 @@
+/*
+ * motionStateMachineUpdate.c
+ *
+ *  Created on: Jun 3, 2019
+ *      Author: hdtie
+ */
+
+#include "motionStateMachineUpdate.h"
+
+typedef enum {S_NOMOTION=0, S_NOMOTION_WAIT, S_MOTION, S_MOTION_WAIT} motionState_t;
+static motionDetector_t mnt;
+static motionState_t     motionState=S_NOMOTION;
+
+
+void motionStateMachineUpdate(void)
+{
+    switch(motionState)
+    {
+        case S_NOMOTION:
+            if ()
+    }
+}
+
+
